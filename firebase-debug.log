@@ -1,0 +1,47 @@
+[debug] [2021-05-15T12:37:30.515Z] ----------------------------------------------------------------------
+[debug] [2021-05-15T12:37:30.520Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-15T12:37:30.521Z] CLI Version:   9.10.2
+[debug] [2021-05-15T12:37:30.521Z] Platform:      win32
+[debug] [2021-05-15T12:37:30.522Z] Node Version:  v12.16.2
+[debug] [2021-05-15T12:37:30.524Z] Time:          Sat May 15 2021 20:37:30 GMT+0800 (Singapore Standard Time)
+[debug] [2021-05-15T12:37:30.524Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-15T12:37:30.544Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-15T12:37:30.545Z] > authorizing via signed-in user (kaartiikofficial@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Kaartiik
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using jobify-system. 
+[debug] [2021-05-15T12:37:41.106Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jobify-system [none]
+[debug] [2021-05-15T12:37:41.504Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jobify-system 403
+[debug] [2021-05-15T12:37:41.504Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jobify-system {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-05-15T12:37:41.506Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-05-15T12:37:41.510Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Kaartiik\AppData\Roaming\nvm\v12.16.2\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Kaartiik\AppData\Roaming\nvm\v12.16.2\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (C:\Users\Kaartiik\AppData\Roaming\nvm\v12.16.2\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Kaartiik\AppData\Roaming\nvm\v12.16.2\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\Kaartiik\AppData\Roaming\nvm\v12.16.2\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Kaartiik\AppData\Roaming\nvm\v12.16.2\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project jobify-system. Please make sure the project exists and your account has permission to access it.

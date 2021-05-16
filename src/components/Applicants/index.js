@@ -56,6 +56,7 @@ const columns = [
   { title: 'Name', field: 'name' },
   { title: 'Age', field: 'age' },
   { title: 'Email', field: 'email' },
+  { title: 'Mobile', field: 'mobile' },
 ];
 
 function Applicants(props) {
